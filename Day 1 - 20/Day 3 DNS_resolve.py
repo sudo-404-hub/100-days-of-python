@@ -7,11 +7,12 @@
 import socket
 
 while True:
-    try: 
-        input_domain = input("Enter domain to get ip: ")
-        print(socket.gethostbyname(input_domain))
-        # socket.gethostbyaddr(ip) # ip to domain name.
+    try:
+        input_domain = input("Enter IP to get domain name: ")
+        print(socket.getfqdn(input_domain))
+        # for domain to ip use socket.gethostnamebyaddr
     except:
-        print("plz enter vaild domain name like [https://google.com] or [google.com]")
+        print("plz enter invaild IP")
 
-
+# gethostbyaddr: Returns a tuple containing the primary hostname, aliases, and a list of IP addresses.
+# getfqdn: Returns a string representing the FQDN( Fully Qualified Domain Name) of the local machine.
