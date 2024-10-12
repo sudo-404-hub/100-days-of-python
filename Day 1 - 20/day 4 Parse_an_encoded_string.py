@@ -14,15 +14,15 @@
 
 
 
-# def my_fun(encode_msg):
+def my_fun(encode_msg):
     
-#     split_msg = encode_msg.split('000')
-#     print("First name is : ",split_msg[0])
-#     print("Last name is : ",split_msg[1])
-#     print("ID is : ", split_msg[2])
+    split_msg = encode_msg.split('000')
+    print("First name is : ",split_msg[0])
+    print("Last name is : ",split_msg[1])
+    print("ID is : ", split_msg[2])
 
 
-# my_fun("Robert000Smith000123")
+my_fun("Robert000Smith000123")
 
 
 # mistake i was doing ---
